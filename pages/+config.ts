@@ -9,5 +9,6 @@ export default {
   Head,
   // <title>
   title: "My Vike App",
+  stream: true,
   extends: vikeReact,
 } satisfies Config;
