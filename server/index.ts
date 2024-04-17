@@ -1,7 +1,7 @@
 import express from 'express'
 import compression from 'compression'
 import { renderPage } from 'vike/server'
-import { telefunc, config } from 'telefunc'
+import { telefunc, config, provideTelefuncContext } from 'telefunc'
 import { root } from './root.js'
 import Cookies from 'universal-cookie';
 const isProduction = process.env.NODE_ENV === 'production'
@@ -44,7 +44,9 @@ function installTelefunc(app) {
     const context = {
       calculation: req?.calculation,
     }
+    console.log('========= middleware 1')
     const httpResponse = await telefunc({ url: req.originalUrl, method: req.method, body: req.body, context })
+    console.log('============ middleware 2')
     const { body, statusCode, contentType } = httpResponse
     res.status(statusCode).type(contentType).send(body)
   })
@@ -58,6 +60,10 @@ function installVikeMiddleware(app) {
       urlOriginal: req.originalUrl,
       calculation: req?.calculation,
     }
+    const context = {
+      calculation: req?.calculation,
+    }
+    provideTelefuncContext(context)
     const pageContext = await renderPage(pageContextInit)
     const { httpResponse } = pageContext
     if (!httpResponse) {
