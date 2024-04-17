@@ -36,14 +36,14 @@ dependencies:
     specifier: ^18.2.0
     version: 18.2.0(react@18.2.0)
   react-streaming:
-    specifier: ^0.3.24
-    version: 0.3.24(react-dom@18.2.0)(react@18.2.0)
+    specifier: ^0.3.25
+    version: 0.3.25(react-dom@18.2.0)(react@18.2.0)
   sirv:
     specifier: ^2.0.3
     version: 2.0.4
   telefunc:
     specifier: ^0.1.62
-    version: 0.1.71(@babel/core@7.24.4)(react-streaming@0.3.24)(react@18.2.0)
+    version: 0.1.71(@babel/core@7.24.4)(react-streaming@0.3.25)(react@18.2.0)
   tsx:
     specifier: ^4.7.2
     version: 4.7.2
@@ -55,10 +55,10 @@ dependencies:
     version: 4.0.4
   vike:
     specifier: ^0.4.144
-    version: 0.4.168(react-streaming@0.3.24)(vite@4.5.3)
+    version: 0.4.168(react-streaming@0.3.25)(vite@4.5.3)
   vike-react:
-    specifier: ^0.4.6
-    version: 0.4.6(react-dom@18.2.0)(react@18.2.0)(vike@0.4.168)(vite@4.5.3)
+    specifier: ^0.4.7
+    version: 0.4.7(react-dom@18.2.0)(react@18.2.0)(vike@0.4.168)(vite@4.5.3)
   vite:
     specifier: ^4.4.9
     version: 4.5.3
@@ -2695,8 +2695,9 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: false
 
-  /react-streaming@0.3.24(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-sKqhgFJswZR3yFDmtwKYVZMJB7nkjQ0r4BHEQTZHLQzM5Ro8Bv4F/kgygdYfivncOu+H6apUugK2bL/WB7z5qQ==}
+  /react-streaming@0.3.25(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-RfiC1+mEgO6FMNFo5k77TRouXP8Vzj45tUAJRWUbQqPnPnvQSDc1FFkxNJ3LkR4AUdMVxZ+tC/gofjV0A3SW3A==}
+    requiresBuild: true
     peerDependencies:
       react: '>=18'
       react-dom: '>=18'
@@ -3012,7 +3013,7 @@ packages:
     engines: {node: '>= 0.4'}
     dev: false
 
-  /telefunc@0.1.71(@babel/core@7.24.4)(react-streaming@0.3.24)(react@18.2.0):
+  /telefunc@0.1.71(@babel/core@7.24.4)(react-streaming@0.3.25)(react@18.2.0):
     resolution: {integrity: sha512-1AV4At59PiQmrzBEfx8hoboOAyya2xWYKzwWCrFFaPmkwkm5yCEPrH9iWtCvPNBOk7f8VQGF14bmtXczm6tIKg==}
     engines: {node: '>=12.19.0'}
     peerDependencies:
@@ -3041,7 +3042,7 @@ packages:
       es-module-lexer: 0.7.1
       picocolors: 1.0.0
       react: 18.2.0
-      react-streaming: 0.3.24(react-dom@18.2.0)(react@18.2.0)
+      react-streaming: 0.3.25(react-dom@18.2.0)(react@18.2.0)
       ts-morph: 19.0.0
     dev: false
 
@@ -3211,8 +3212,8 @@ packages:
     engines: {node: '>= 0.8'}
     dev: false
 
-  /vike-react@0.4.6(react-dom@18.2.0)(react@18.2.0)(vike@0.4.168)(vite@4.5.3):
-    resolution: {integrity: sha512-CjfhmPX/OtQhMaFCC8UzPr2O4RlB7FlRX3EDa/EP3q7wRRdb5AGVkkUkx+NNj7bxQiMHlR2+njiKrr0x5ITEUw==}
+  /vike-react@0.4.7(react-dom@18.2.0)(react@18.2.0)(vike@0.4.168)(vite@4.5.3):
+    resolution: {integrity: sha512-tOt/Jn7sWQTZJ+6fytxiDJIlTOjh1412Vp0DE8Ha+q4zMNrCWGPe2BFt4iTV7cE45bfJ1e+ugjLBPrwPjuLdGQ==}
     peerDependencies:
       react: 18.x.x
       react-dom: 18.x.x
@@ -3221,12 +3222,12 @@ packages:
     dependencies:
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
-      react-streaming: 0.3.24(react-dom@18.2.0)(react@18.2.0)
-      vike: 0.4.168(react-streaming@0.3.24)(vite@4.5.3)
+      react-streaming: 0.3.25(react-dom@18.2.0)(react@18.2.0)
+      vike: 0.4.168(react-streaming@0.3.25)(vite@4.5.3)
       vite: 4.5.3
     dev: false
 
-  /vike@0.4.168(react-streaming@0.3.24)(vite@4.5.3):
+  /vike@0.4.168(react-streaming@0.3.25)(vite@4.5.3):
     resolution: {integrity: sha512-60MJDT/o791TXyvF3bdJJJLLqWVJpbhqhtWDoZytktF/2YhA8gtny7DRcxey6iy69jKwzg3qiAQ9TVPtZRMJow==}
     engines: {node: '>=16.0.0'}
     hasBin: true
@@ -3247,7 +3248,7 @@ packages:
       es-module-lexer: 1.5.0
       esbuild: 0.19.12
       fast-glob: 3.3.2
-      react-streaming: 0.3.24(react-dom@18.2.0)(react@18.2.0)
+      react-streaming: 0.3.25(react-dom@18.2.0)(react@18.2.0)
       sirv: 2.0.4
       source-map-support: 0.5.21
       vite: 4.5.3
